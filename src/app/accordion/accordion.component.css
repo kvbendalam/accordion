@@ -1,0 +1,48 @@
+p.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 30%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.1s;
+    margin-top:0px;
+    margin-bottom:0px;
+    border-bottom:1px solid white;
+}
+
+p.accordion.active, p.accordion:hover {
+    background-color: #ddd;
+}
+
+p.accordion:after {
+    content: '\2795'; 
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+p.accordion.active:after {
+    content: "\2796"; 
+}
+
+
+div.panel {
+    padding: 0px 18px;
+    background-color:#eee;
+    color:#444;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.1s ease-in-out;
+    opacity: 0;
+    margin-bottom:0px;
+    width:30%;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 500px; 
+}
