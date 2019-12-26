@@ -12,7 +12,6 @@ p.accordion {
     margin-bottom:0px;
     border-bottom:1px solid white;
 }
-
 p.accordion.active, p.accordion:hover {
     background-color: #ddd;
 }
